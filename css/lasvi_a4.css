@@ -1,0 +1,160 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  
+  
+  .body_nf {
+    overflow: hidden;
+  }
+  
+  .nav .midd{
+    padding-top: auto;
+    margin: auto;
+    
+  
+    height: auto;
+  }
+  
+   .a1 a {
+    font-size: 0.6em;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .a2 a:hover {
+    font-size: 0.61em;
+    text-decoration: underline;
+    color: rgba(196, 178, 178, 0.459);
+    text-align: center;
+    margin-top: 2vh; 
+  }
+  
+  .a3 a {
+    text-decoration: slategray;
+    color: slategray;
+  }
+  
+  .a4 a:hover {
+    text-decoration: underline;
+    color: steelblue;
+  }
+  
+  #header {
+    margin-top: 0vh;
+    width: 100vw;
+    height: 8vh;
+    text-align: center;
+    background-color: #f5be8f;
+  }
+  
+  .h1 {
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .nav {
+    width: 100vw;
+    height: 5.5vh;
+    text-align: center;
+    background-color: #be5800;
+    color: #d9d9ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+#aside {
+    width: 20vw;
+    height: 68vh;
+    text-align: center;
+    background-color: #f8ecda;
+    float: left;
+    color: aliceblue;
+}
+
+#nav1 {
+    width: 80vw;
+    height: 2vw;
+    text-align: center;
+    background-color: #f8ecda;
+    float: right;
+}
+
+#section {
+    width: 80vw;
+    height: 68vh;
+    text-align: center;
+    background-color: #cecfd0;
+    float: right;
+}
+
+
+
+#article1 {
+    width: 80vw;
+    height: 31.5vh;
+    text-align: left;
+    background-color: #ffffff;
+    float: right;
+    border-right: 0.25vw #444444 solid;
+    border-left: 0.25vw #444444 solid;
+    border-top: 0.5vh #444444 solid;
+    border-bottom: 0.5vh #444444 solid;
+}
+
+#article2 {
+    width: 80vw;
+    height: 31.5vh;
+    text-align: center;
+    background-color: #dfdfdf;
+    float: right;
+    border-right: 0.25vw #444444 solid;
+    border-left: 0.25vw #444444 solid;
+    border-bottom: 0.5vh #444444 solid;
+}
+
+
+
+#articleA {
+    width: 40vw;
+    height: 31.5vh;
+    text-align: left;
+    background-color: white;
+    float: left;
+}
+
+#articleB {
+    width: 40vw;
+    height: 31.5vh;
+    text-align: left;
+    background-color: #ffffbb;
+    float: right;
+}
+
+#articleC {
+    width: 40vw;
+    height: 31.5vh;
+    text-align: left;
+    background-color: #ffffbb;
+    float: left;
+}
+
+#articleD {
+    width: 40vw;
+    height: 31.5vh;
+    text-align: left;
+    background-color: white;
+    float: right;
+}
+
+#footer {
+    width: 100vw;
+    height: 19vh;
+    text-align: center;
+    background-color: #f5be8f;
+    clear: both;
+}

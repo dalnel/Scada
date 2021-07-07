@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title> 勤益冷凍師徒制定址式開關＿中央監控系統 </title>
+    <meta name="定址式開關,switch" content="開關,監控開關,定址式開關,勤益冷凍,勤益師徒制,Addressing type Switch">
+    <link href="../css/cnvi_6.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript" src="AnimationPage.js"></script>
+    <script type="text/javascript" src="../js/realtime.js"></script>
+    <link type="text/css" href="../css/AnimationPage.css" rel="stylesheet">
+    <script src="../js/cookie.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/AnimationPage.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+</head>
+
+<body class="body_nf">
+    <div id="header">
+        <a href="./測試版型.html">
+            <img src="../graph/NCUT.svg" alt="回首頁" title="返回控制介面" width="55px" height="55px" style="float: left;">
+        </a>
+        <span class="h1"><b>中央監控_6樓</b></span>
+
+        <body onload="ShowTime()">
+            <div class="showbox">
+                <div id="showbox"></div>
+            </div>
+        </body>
+    </div>
+
+
+   
+    <div class="nav">
+        <div class="midd">
+            <div class="a1 a2">
+                <span>|&#160&#160</span>
+                <a href="./login_ui.html">登入</a>
+                <span>&#160&#160|&#160&#160</span>
+    
+                <a href="#">註冊</a>
+                <span>&#160&#160|</span>
+                <span>&#160&#160&#160&#160&#160&#160|&#160&#160</span>
+    
+                <a href="./cnvi_all.html">中央監控總覽</a>
+                <span>&#160&#160|&#160&#160</span>
+    
+                <a href="./lasvi_all.html">區域警報總覽</a>
+                <span>&#160&#160|&#160&#160</span>
+    
+                <a href="./salvi_all.html">系統警報記錄</a>
+                <span>&#160&#160|&#160&#160</span>
+
+                <a href="../html/index_.html">時程選擇</a>
+                <span>&#160&#160|&#160&#160</span>
+              </div>
+            </div>
+        </div>
+    
+    <div id="aside">
+        <div class="a1 a2">
+
+        </div>
+        <ul>
+            <div class="a3 a4">
+                <ul>
+                    <a href="cnvi_7.html"><button class="but aside_button button_position7">七樓</button></a>
+                    <a href="cnvi_6.html"><button class="but aside_button button_position6">六樓</button></a>
+                    <a href="cnvi_5.html"><button class="but aside_button button_position5">五樓</button></a>
+                    <a href="cnvi_4.html"><button class="but aside_button button_position4">四樓</button></a>
+                    <a href="cnvi_3.html"><button class="but aside_button button_position3">三樓</button></a>
+                    <a href="cnvi_2.html"><button class="but aside_button button_position2">二樓</button></a>
+                    <a href="cnvi_1.html"><button class="but aside_button button_position1">一樓</button></a>
+                    <a href="cnvi_b1.html"><button class="but aside_button button_positionb1">Ｂ1</button></a>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+    <div id="section">
+        <div class="a1 a2">
+            <img src="../graph/cn6.jpg" class="section">
+            <div class="open btn_ab1"><button id="btn_1">開關一</button></div>
+            <div class="open btn_ab2"><button id="btn_2">開關二</button></div>
+            <div class="alarm_1" id="alarm_1">
+
+
+                <div class="alarm__case ">
+                    <div class="alarm__light" id="alarm_1_light" style="display: none;"></div>
+                </div>
+
+
+            </div>
+            <div class="alarm_2">
+
+
+                <div class="alarm__case ">
+
+
+                    <div class="alarm__light" id="alarm_2_light" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="modal-frame_1">
+        <div class="modal">
+            <div class="modal-inset">
+                <div class="button close"><i class="fa fa-close"></i></div>
+                <div class="modal-body"> <b style=" font-size:25px">station 1</b>
+                    <table align="center" style="margin-top:15px">
+                        <tr>
+                            <td>
+                                <b style="margin-bottom:50px; font-size:23px">1-1</b>
+                                <div class="toggle" id="toggleDiv_1">
+                                    <input type="checkbox" id="toggle_1" />
+                                    <label for="toggle_1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <b style="margin-bottom:50px; font-size:23px">1-2</b>
+                                <div class="toggle" id="toggleDiv_2">
+                                    <input type="checkbox" id="toggle_2" />
+                                    <label for="toggle_2"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="margin-bottom:50px; font-size:23px">2-1</b>
+                                <div class="toggle" id="toggleDiv_3">
+                                    <input type="checkbox" id="toggle_3" />
+                                    <label for="toggle_3"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <b style="margin-bottom:50px; font-size:23px">2-2</b>
+                                <div class="toggle" id="toggleDiv_4">
+                                    <input type="checkbox" id="toggle_4" />
+                                    <label for="toggle_4"></label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-frame_2">
+        <div class="modal">
+            <div class="modal-inset">
+                <div class="button close"><i class="fa fa-close"></i></div>
+                <div class="modal-body"> <b style=" font-size:25px">station 2</b>
+                    <table align="center" style="margin-top:15px">
+                        <tr>
+                            <td>
+                                <b style="margin-bottom:50px; font-size:23px">1-1</b>
+                                <div class="toggle" id="toggleDiv_5">
+                                    <input type="checkbox" id="toggle_5" />
+                                    <label for="toggle_5"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <b style="margin-bottom:50px; font-size:23px">1-2</b>
+                                <div class="toggle" id="toggleDiv_6">
+                                    <input type="checkbox" id="toggle_6" />
+                                    <label for="toggle_6"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b style="margin-bottom:50px; font-size:23px">2-1</b>
+                                <div class="toggle" id="toggleDiv_7">
+                                    <input type="checkbox" id="toggle_7" />
+                                    <label for="toggle_7"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <b style="margin-bottom:50px; font-size:23px">2-2</b>
+                                <div class="toggle" id="toggleDiv_8">
+                                    <input type="checkbox" id="toggle_8" />
+                                    <label for="toggle_8"></label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+    <div id="footer"></div>
+
+
+</body>
+
+</html>

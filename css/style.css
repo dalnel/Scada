@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700i,800,800i,900,900i");
+/*======================
+  Reset Default Styles 
+========================*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+
+
+
+
+/*======================
+ Common Style 
+========================*/
+body {
+  background-color: #eee9e9;
+}
+
+
+/*---- View < 1024px ----*/
+@media (max-width: 1024px) {
+  main section li {
+    width: 50%;
+  }
+  main section li:nth-child(4n+1) {
+    clear: none;
+  }
+  main section li:nth-child(2n+1) {
+    clear: left;
+  }
+}
+/*---- View < 450px ----*/
+@media (max-width: 450px) {
+  main section li {
+    width: 100%;
+  }
+}
+/*======================
+Check Boxes Styles
+========================*/
+input[type='checkbox'] {
+  opacity: 0;
+  z-index: -1;
+}
+
+input + label {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-indent: -999px;
+  overflow: hidden;
+  border: 1px solid rgba(68, 68, 67, 0.788);
+  cursor: pointer;
+}
+
+/*-------------------
+  #checkbox-a style
+  ------------------*/
+.on input + label{
+
+    border: 3px solid rgba(68, 68, 67, 0.788);
+    background: transparent;
+    transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 10px;
+}
+
+.on input:checked + label{
+  border: 3px solid rgba(52, 255, 1, 0.74);
+  background: rgba(52, 255, 1, 0.74);
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 10px;
+}
+
+/*.click input:checked + label{
+  border: 3px solid rgba(52, 255, 1, 0.74);
+  background: rgba(52, 255, 1, 0.74);
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 10px;
+}*/
+
+.table{
+  padding-top: 5em;
+}
+

@@ -15,6 +15,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../js/AnimationPage.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link href="../css/scheduleSetBtn.css" rel="stylesheet">
 </head>
 
 <body class="body_nf">
@@ -82,6 +85,15 @@
     <div id="section">
         <div class="a1 a2">
             <img src="../graph/cn7.png" class="section">
+            <div class="row rowabso">
+                <div class="col-sm-5">
+                    <button type="button" class="btn btn-sm btn-toggle" data-toggle="button" aria-pressed="false"
+                        autocomplete="off">
+                        <div class="handle"></div>
+                    </button>
+                </div>
+            </div>
+
             <div class="open btn_ab1"><button id="btn_1">開關一</button></div>
             <div class="open btn_ab2"><button id="btn_2">開關二</button></div>
             <div class="alarm_1" id="alarm_1">

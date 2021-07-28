@@ -1,28 +1,26 @@
-$.ajax({
-  type: "GET",
-  url: "/test",
-  success: function (res) {
-    init(res);
-  }
-})
-function init(res){
-  for (let i = 1; i <= 48; i++)
-  {
-    document.querySelector("#but_" + i + "_1").checked = convertBool(res[0][i-1]);
-    document.querySelector("#but_" + i + "_2").checked = convertBool(res[1][i-1]);
-    document.querySelector("#but_" + i + "_3").checked = convertBool(res[2][i-1]);
-    document.querySelector("#but_" + i + "_4").checked = convertBool(res[3][i-1]);
-    
-  }
-}
-function convertBool(string){
-  if(string == "true")
-  {
-    return true;
-  }
-  else
-  {
-    return false;
-  }
-}
+/*測試用JS，沒有加入在html中*/
 
+var press = false;
+
+$('td').mousedown( function(e) { 
+  press = true;
+  e.preventDefault();
+});
+  $(document).mouseup( function(e) { 
+    press = false;   
+    //toggleDot($(this));
+    e.preventDefault();
+  });
+  
+  $('td').mouseover( function(e) {
+    if (press) { 
+      toggleDot($(this));
+      e.preventDefault();
+    }
+  });
+
+  function toggleDot(me) {
+    var ele =  $(me).get(0).firstChild.id;
+    console.log(ele);
+    document.querySelector("#" + ele).checked = true;
+}

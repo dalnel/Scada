@@ -68,7 +68,7 @@ body {
   }
 
 #aside {
-    width: 20vw;
+    width: 10vw;
     height: 68vh;
     text-align: left;
     background-color: #be5800;
@@ -76,7 +76,7 @@ body {
 }
 
 #section {
-    width: 80vw;
+    width: 90vw;
     height: 68vh;
     text-align: center;
     background-color: #ffffff;

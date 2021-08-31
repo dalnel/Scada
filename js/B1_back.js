@@ -1,39 +1,50 @@
 var flag_3 = true;
 var flag_2 = true;
-setInterval("Butn_init()", 2000)
-setInterval("schedule()", 2000)
+var canRead = true;
+var canWrite = true;
+setInterval("Butn_init()", 2000);
 function Butn_init() {
-  /*   $.ajax({
-        type: "GET",
-        url: "/background",
-        dataType: "json",
-        success: function (res) {
-            if (res.station[0].bts1 == 111 || res.station[0].bts1 == 100) {
-                $('#btn_1').css("background-color", "lightgreen");
-                $('#btn_2').css("background-color", "lightgreen");
+    canWrite = false;
+    if(canRead)
+    {
+        $.ajax({
+            type: "GET",
+            url: "/background",
+            dataType: "json",
+            success: function (res) {                
+                if (res.station[0].bts1 == 111 || res.station[0].bts1 == 100) {
+                    $('#btn_1').css("background-color", "lightgreen");
+                    $('#btn_2').css("background-color", "lightgreen");
+                }
+                else {
+                    $('#btn_1').css("background-color", "red");
+                    $('#btn_2').css("background-color", "red");
+                }
+                alarm_1(res.station[0].bts5);
+                alarm_2(res.station[1].bts5); 
+                switch_1(res.station[0].bts1);//******
+                switch_2(res.station[0].bts2);//ID_1 *
+                switch_3(res.station[0].bts3);//     *
+                switch_4(res.station[0].bts4);//******
+                    
+                switch_5(res.station[1].bts1);//******
+                switch_6(res.station[1].bts2);//ID_2 *
+                switch_7(res.station[1].bts3);//     *
+                switch_8(res.station[1].bts4);//******
+        
+                // RFID(res.station[1].id_1,res.station[1].id_2,res.station[1].id_3,res.station[1].id_4,); 
+                canWrite = true;
+                schedule();             
             }
-            else {
-                $('#btn_1').css("background-color", "red");
-                $('#btn_2').css("background-color", "red");
-            }
-            alarm_1(res.station[0].bts5);
-            alarm_2(res.station[1].bts5); 
-            switch_1(res.station[0].bts1);//******
-            switch_2(res.station[0].bts2);//ID_1 *
-            switch_3(res.station[0].bts3);//     *
-            switch_4(res.station[0].bts4);//******
-            
-            switch_5(res.station[1].bts1);//******
-            switch_6(res.station[1].bts2);//ID_2 *
-            switch_7(res.station[1].bts3);//     *
-            switch_8(res.station[1].bts4);//******
-
-            // RFID(res.station[1].id_1,res.station[1].id_2,res.station[1].id_3,res.station[1].id_4,);
-        }
-    })
-}*/
+        })
+    }
+}
 function schedule(){
-    $.post("/test/",{null: "null", csrfmiddlewaretoken: $("[name='csrfmiddlewaretoken']").val() }, function () { });
+    if(canWrite)
+    {
+        canRead = false;
+        $.post("/test/",{null: "null", csrfmiddlewaretoken: $("[name='csrfmiddlewaretoken']").val() }, function () {canRead = true;});    
+    }
 }
 function alarm_1(sw){
     if(sw == 111 && flag_3 == true)

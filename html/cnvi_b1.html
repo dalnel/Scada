@@ -14,6 +14,9 @@
     <script src="../js/cookie.js"></script>
     <script type="text/javascript" src="../js/AnimationPage.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link href="../css/scheduleSetBtn.css" rel="stylesheet">
 </head>
 
 <body class="body_nf">
@@ -72,6 +75,7 @@
                     <a href="cnvi_2.html"><button class="but aside_button button_position2">二樓</button></a>
                     <a href="cnvi_1.html"><button class="but aside_button button_position1">一樓</button></a>
                     <a href="cnvi_b1.html"><button class="but aside_button button_positionb1">Ｂ1</button></a>
+                    
                 </ul>
             </div>
         </ul>
@@ -80,6 +84,17 @@
     <div id="section">
         <div class="a1 a2">
             <img src="../graph/cnb1.jpg" class="backimg">
+
+            <div class="row rowabso">
+                <div class="col-sm-5">
+                    <button type="button" class="btn btn-sm btn-toggle" data-toggle="button" aria-pressed="false"
+                        autocomplete="off">
+                        <div class="handle"></div>
+                    </button>
+                </div>
+            </div>
+
+
             <div class="alarm_1" id="alarm_1">
                 <div class="open_1 btn_ab1"><button id="btn_1">開關一</button></div>
                 <div class="alarm__case ">

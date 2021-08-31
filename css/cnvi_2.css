@@ -185,6 +185,14 @@ body {
   clear: both;
 }
 
+
+.rowabso{
+  position: absolute;
+  right: 1vw;
+  top: 15vh;
+}
+
+
 .showbox {
   text-align: right;
   color: black;

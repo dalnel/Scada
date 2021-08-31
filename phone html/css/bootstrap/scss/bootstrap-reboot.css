@@ -393,10 +393,6 @@ legend + * {
   padding: 0;
 }
 
-::-webkit-file-upload-button {
-  font: inherit;
-}
-
 ::file-selector-button {
   font: inherit;
 }
@@ -425,4 +421,4 @@ progress {
 
 [hidden] {
   display: none !important;
-}/*# sourceMappingURL=bootstrap-reboot.css.map */
+}

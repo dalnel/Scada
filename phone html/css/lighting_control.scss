@@ -59,6 +59,23 @@ body {
 
     }
 
+    #title {
+        height: 10%;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 70%;
+            margin-left: 20%;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
 
     #floors {
         height: 10%;

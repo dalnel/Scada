@@ -66,6 +66,21 @@ body #header .h1 {
   flex-basis: 40%;
   font-size: 1.8rem;
 }
+body #title {
+  height: 10%;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body #title img {
+  width: 70%;
+  margin-left: 20%;
+}
+body #title h1 {
+  font-size: 3rem;
+}
 body #floors {
   height: 10%;
   display: flex;
@@ -191,4 +206,4 @@ body #nav.expand {
 }
 #details button:active {
   box-shadow: 0 0 5px 5px red;
-}/*# sourceMappingURL=alarm_record.css.map */
+}

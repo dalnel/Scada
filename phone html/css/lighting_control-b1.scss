@@ -1,0 +1,74 @@
+@use "./common.scss";
+@use "./lighting_control.scss";
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    div {
+        width: 100%;
+        display: flex;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 10%;
+        margin-top: 25px;
+
+        a {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 20%;
+
+            button {
+                font-size: 2rem;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+        .a1 {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 20%;
+
+
+            button {
+                
+                font-size: 2rem;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                } 
+            }
+        }
+
+        .h1 {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 20%;
+            font-size: 1.8rem;
+        }
+
+    }
+}
+#area {
+    display: flex;
+    flex-direction: column;
+
+    button {
+        @include common.default-button;
+        margin: 20% auto;
+        font-size: 2.5rem;
+        width: 50%;
+        padding: 5%;
+    }
+}

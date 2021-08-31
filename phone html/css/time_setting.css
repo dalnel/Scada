@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  color: #99d9f2;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111559;
+}
+
+html {
+  width: 414px;
+  height: 896px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body div {
+  width: 100%;
+  display: flex;
+}
+body #header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 10%;
+  margin-top: 25px;
+}
+body #header a {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15%;
+}
+body #header a button {
+  font-size: 2rem;
+}
+body #header a button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .a1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15%;
+}
+body #header .a1 button {
+  font-size: 2rem;
+}
+body #header .a1 button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .h1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
+  font-size: 2rem;
+}
+body #header .nnav {
+  height: 60%;
+  margin-top: 5%;
+  font-size: 1.8rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 60%;
+}
+body #floors {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+}
+body #floors button {
+  border-radius: 50px;
+  color: #99d9f2;
+  background-color: #03658c;
+  border: 5px solid #707070;
+  height: 100px;
+  width: 50%;
+  margin: 2.5%;
+  font-size: 2rem;
+}
+body #floors button:active {
+  box-shadow: 0 0 5px 5px red;
+}/*# sourceMappingURL=time_setting.css.map */

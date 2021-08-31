@@ -1,0 +1,88 @@
+@use "./common.scss";
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    div {
+        width: 100%;
+        display: flex;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 10%;
+        margin-top: 25px;
+
+        a {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 15%;
+
+            button {
+                font-size: 2rem;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .a1 {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 15%;
+
+
+            button {
+
+                font-size: 2rem;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .h1 {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 40%;
+            font-size: 2rem;
+        }
+
+        .nnav {
+            height: 60%;
+            margin-top: 5%;
+            font-size: 1.8rem;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 60%;
+
+        }
+
+    }
+
+
+
+    #floors {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15%;
+
+        button {
+            @include common.default-button;
+            height: 100px;
+            width: 50%;
+            margin: 2.5%;
+            font-size: 2rem;
+        }
+    }
+}

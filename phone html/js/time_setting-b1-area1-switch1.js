@@ -74,8 +74,18 @@ add_item_btn.addEventListener(`click`, evt =>
     {
         if (v == null) return;
     });
+
+    //加入設定的時程
     let item = document.createElement(`button`);
     item.innerHTML = `${values[0]}:${values[2]}到${values[1]}:${values[3]}`;
     document.querySelector("#items").appendChild(item);
+
+    //顯示加入時程的通知
+    let popup = document.querySelector("#add_item_popup");
+    popup.innerHTML = `已將時段 ${values[0]}:${values[2]} 到 ${values[1]}:${values[3]} 加入排程`;
+    popup.addEventListener("animationend", () => popup.classList.remove("popup"));
+    popup.classList.add("popup");
+
+
     evt.stopPropagation();
 });

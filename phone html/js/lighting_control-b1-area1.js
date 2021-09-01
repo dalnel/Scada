@@ -27,3 +27,4 @@ lights.forEach(
         );
     }
 );
+

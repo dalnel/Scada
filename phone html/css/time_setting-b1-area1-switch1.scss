@@ -21,6 +21,7 @@
     height: 50%;
     top: 25%;
     background: #fff;
+    visibility: hidden;
 
     >* {
         height: 20%;
@@ -48,8 +49,6 @@
         position: relative;
     }
 
-    visibility: hidden;
-
     .time_list {
         background: red;
         list-style: none;
@@ -75,6 +74,43 @@
                 }
             }
         }
+    }
+}
+
+#add_item_popup{
+    position: fixed;
+    display: block;
+    bottom: 15%;
+    background-color: common.$default-border-color;
+    font-size: 1.5rem;
+    text-align: center;
+    left: 5%;
+    width: 90%;
+    border-radius: 50px;
+    opacity: 0;
+    z-index: -1;
+    padding: 5% 0;
+}
+
+.popup{
+    animation-name: popup_animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popup_animation{
+    0%{
+        opacity: 0;
+        z-index: -1;
+    }
+    50%{
+        opacity: 1;
+        z-index: 100;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
     }
 }
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "phone/css/lighting_control-b1-area1.css" %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="javascript:history.back()"><button>＜<button></a>
+        <a href="{% url 'phoneHome' %}"><button><img src="{% static "phone/images/NCUT.svg" %}"></button></a>
+        <h1 class="h1">區域1</h1>
+        <a class="a1"></a>
+        <a class="a1"></a>
+    </div>
+    <div id="swi_flex">
+        <div id="switch1">
+            <div class="btn_codepen_body">
+                <label>
+                    <input type="checkbox" checked />
+                    <div class="div1">
+                        <span class="on">自動</span>
+                        <span class="off">手動</span>
+                    </div>
+                    <i></i>
+                </label>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="lights">
+        <div id="light1">
+            <div id="content">
+                <h1>燈光1</h1>
+                <div id="options">
+                    <button>開啟</button>
+                    <button>關閉</button>
+                </div>
+            </div>
+        </div>
+        <div id="light2">
+            <div id="content">
+                <h1>燈光2</h1>
+                <div id="options">
+                    <button>開啟</button>
+                    <button>關閉</button>
+                </div>
+            </div>
+        </div>
+        <div id="light3">
+            <div id="content">
+                <h1>燈光3</h1>
+                <div id="options">
+                    <button>開啟</button>
+                    <button>關閉</button>
+                </div>
+            </div>
+        </div>
+        <div id="light4">
+            <div id="content">
+                <h1>燈光4</h1>
+                <div id="options">
+                    <button>開啟</button>
+                    <button>關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static "phone/js/lighting_control-b1-area1.js" %}"></script>
+</body>
+
+</html>

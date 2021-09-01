@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "phone/css/alarm_record_history.css" %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="javascript:history.back()"><button>＜<button></a>
+        <a href="{% url 'phoneHome' %}"><button><img src="{% static "phone/images/NCUT.svg" %}"></button></a>
+        <h1 class="h1">歷史紀錄</h1>
+        <a class="a1"></a>
+        <a class="a1"><button id="expand_menu_btn"><img src="{% static "phone/images/menu.ico" %}"></button></a>
+    </div>
+    <div id="filter">
+        <button>條件篩選</button>
+        <div>
+            <div>
+            <button>╳</button>
+            <button>位置</button>
+            <button>求救方式</button>
+            <button>發生時間</button>
+            <button>查詢</button>
+            </div>
+        </div>
+    </div>
+    <div id="records">
+        <div>
+            <p>B1-區域1-開關1</p>
+            <p>按鈕求救888 888 202 108</p>
+        </div>
+        <div>
+            <p>B1-區域1-開關2</p>
+            <p>刷卡求救888 888 202 108</p>
+        </div>
+        <div>
+            <p>B1-區域1-開關3</p>
+            <p>按鈕求救888 888 202 108</p>
+        </div>
+        <div>
+            <p>B1-區域1-開關4</p>
+            <p>刷卡求救888 888 202 108</p>
+        </div>
+        <div>
+            <p>B1-區域2-開關1</p>
+            <p>按鈕求救888 888 202 108</p>
+        </div>
+        <div>
+            <p>B1-區域2-開關2</p>
+            <p>刷卡求救888 888 202 108</p>
+        </div>
+        <div>
+            <p>B1-區域2-開關3</p>
+            <p>按鈕求救888 888 202 108</p>
+        </div>
+        <div>
+            <p>B1-區域2-開關4</p>
+            <p>刷卡求救888 888 202 108</p>
+        </div>
+       
+    </div>
+</body>
+
+</html>

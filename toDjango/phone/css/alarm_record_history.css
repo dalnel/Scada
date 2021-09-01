@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  color: #99d9f2;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111559;
+}
+
+html {
+  width: 414px;
+  height: 896px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body div {
+  width: 100%;
+  display: flex;
+}
+body #header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10%;
+  margin-top: 25px;
+}
+body #header a {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15%;
+}
+body #header a button {
+  font-size: 2rem;
+}
+body #header a button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .a1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15%;
+}
+body #header .a1 button {
+  font-size: 2rem;
+}
+body #header .a1 button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .h1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
+  font-size: 1.8rem;
+}
+body #title {
+  height: 10%;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body #title img {
+  width: 70%;
+  margin-left: 20%;
+}
+body #title h1 {
+  font-size: 3rem;
+}
+body #floors {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+}
+body #floors a {
+  border: 4px solid #707070;
+  margin: 5% 0;
+  background: #03658c;
+}
+body #floors a:active {
+  box-shadow: 0 0 5px 5px red;
+}
+body #floors a button {
+  border: none;
+  background: inherit;
+  display: flex;
+  font-size: 2.5rem;
+  margin: auto;
+  font-weight: bold;
+  padding-bottom: 7px;
+  padding: 2.5%;
+}
+body #nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background: #f5f5f5;
+  width: 70%;
+  margin-left: 30%;
+  top: 0;
+  bottom: 0;
+  overflow-y: visible;
+  overflow-x: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-out;
+  right: -100%;
+}
+body #nav #header {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+body #nav #header p {
+  grid-column: 2;
+  color: #03658C;
+}
+body #nav #header button {
+  margin: 5% auto;
+  font-size: 2rem;
+}
+body #nav #options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+body #nav #options button {
+  border-radius: 50px;
+  color: #99d9f2;
+  background-color: #03658c;
+  border: 5px solid #707070;
+  width: 70%;
+  margin: 5% auto;
+  font-size: 2rem;
+  padding: 10%;
+  -webkit-animation: 1s linear 0s infinite alternate what;
+          animation: 1s linear 0s infinite alternate what;
+}
+body #nav #options button:active {
+  box-shadow: 0 0 5px 5px red;
+}
+body #nav.expand {
+  right: 0%;
+  opacity: 1;
+  background-color: #faa;
+}
+@-webkit-keyframes what {
+  100% {
+    box-shadow: 0px 10px 5px 5px #199b7d;
+  }
+}
+@keyframes what {
+  100% {
+    box-shadow: 0px 10px 5px 5px #199b7d;
+  }
+}
+
+#filter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+#filter * {
+  font-size: 2.5rem;
+}
+#filter > button {
+  border-radius: 50px;
+  color: #99d9f2;
+  background-color: #03658c;
+  border: 5px solid #707070;
+  margin: auto;
+  padding: 2.5% 5%;
+}
+#filter > button:active {
+  box-shadow: 0 0 5px 5px red;
+}
+#filter > div {
+  position: relative;
+}
+#filter > div > div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2.5% 5%;
+  visibility: hidden;
+}
+#filter > div > div :first-child {
+  margin-left: auto;
+}
+#filter > div > div :not(:first-child) {
+  border-radius: 50px;
+  color: #99d9f2;
+  background-color: #03658c;
+  border: 5px solid #707070;
+  margin: 6% 0;
+  padding: 2.5% 5%;
+}
+#filter > div > div :not(:first-child):active {
+  box-shadow: 0 0 5px 5px red;
+}
+
+#records {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+#records > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  width: 80%;
+  margin: 2.5% 0;
+}
+#records > div :not(:first-child) {
+  font-size: 1.5rem;
+}
+#records > :nth-child(odd) {
+  background: #03658c;
+}

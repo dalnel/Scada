@@ -1,0 +1,93 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  
+  
+  .body_nf {
+    overflow: hidden;
+  }
+  
+  .nav .midd{
+    padding-top: auto;
+    margin: auto;
+    
+  
+    height: auto;
+  }
+  
+   .a1 a {
+    font-size: 0.6em;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .a2 a:hover {
+    font-size: 0.61em;
+    text-decoration: underline;
+    color: rgba(196, 178, 178, 0.459);
+    text-align: center;
+    margin-top: 2vh; 
+  }
+  
+  .a3 a {
+    text-decoration: slategray;
+    color: slategray;
+  }
+  
+  .a4 a:hover {
+    text-decoration: underline;
+    color: steelblue;
+  }
+  
+  #header {
+    margin-top: 0vh;
+    width: 100vw;
+    height: 8vh;
+    text-align: center;
+    background-color: #f5be8f;
+  }
+  
+  .h1 {
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .nav {
+    width: 100vw;
+    height: 5.5vh;
+    text-align: center;
+    background-color: #be5800;
+    color: #d9d9ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+#aside {
+    width: 20vw;
+    height: 68vh;
+    text-align: left;
+    background-color: #be5800;
+    float: left;
+}
+
+#section {
+    width: 80vw;
+    height: 68vh;
+    text-align: center;
+    background-color: #ffffff;
+    float: right;
+    position: relative;
+}
+
+#footer {
+    width: 100vw;
+    height: 19vh;
+    text-align: center;
+    background-color: #f5be8f;
+    clear: both;
+}

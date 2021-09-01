@@ -1,0 +1,231 @@
+@use "./common.scss";
+@use "./lighting_control-b1.scss";
+
+body {
+    #switches {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+
+        button {
+            @include common.default-button;
+            height: 100px;
+            width: 50%;
+            margin: 7%;
+            font-size: 2rem;
+        }
+    }
+}
+#section1 {
+
+    .status-track {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 2em;
+        text-align: center;
+        flex: 1;
+        width: 60px;
+        height: 60px;
+
+
+        .left {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0%;
+
+
+
+        }
+
+
+
+        .complete {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 13%;
+            
+            
+            label {
+
+                svg {
+                    width: 50px;
+                    height: 60px;
+                    fill: #A3B83B;
+
+                }
+            }
+
+            .link-top {
+                margin-top: 30px; 
+                width: 50%;
+                height: 1px;
+                border-top: solid #A3B83B 3px;
+                color: #A3B83B;
+            }
+
+        }
+
+        .current {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 15%;
+
+
+            label {
+                width: 55px;
+                height: 60px;
+
+
+                svg {
+                    margin-left: 3px;
+                    margin-right: 3px;
+                    width: 60px;
+                    height: 60px;
+                    fill: #A3B83B;
+
+                    .position1 {
+                        position: absolute;
+                    }
+
+                    .position2 {
+                        position: absolute;
+                        top: 10%;
+
+                    }
+                }
+            }
+            .link-top {
+                margin-top: 30px; 
+                width: 50%;
+                height: 1px;
+                border-top: solid #A3B83B 3px;
+                color: #A3B83B;
+            }
+
+        }
+
+        .future {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 15%;
+
+
+            label {
+                width: 50px;
+                height: 60px;
+
+                svg {
+                    width: 40px;
+                    height: 60px;
+                    fill: white;
+                }
+            }
+            .link-top {
+                margin-top: 30px; 
+                width: 50%;
+                height: 1px;
+                border-top: solid white 3px;
+                color: white;
+            }
+
+        }
+
+        .right {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 10%;
+
+
+            label {
+                width: 60px;
+                height: 60px;
+
+                svg {
+                    margin-left: 5px;
+                    margin-top: 3px;
+                    width: 60px;
+                    height: 60px;
+                    fill: white;
+                }
+            }
+        }
+        .link-top {
+            margin-top: 30px; 
+            width: 50%;
+            height: 1px;
+            border-top: solid white 3px;
+            color: white;
+        }
+
+
+
+    }
+}
+
+#section2 {
+
+    .status-track {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 2em;
+        text-align: center;
+        flex: 1;
+        width: 60px;
+        height: 60px;
+
+
+        .left {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0%;
+        }
+
+
+
+        .complete {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 15%;
+
+            h5 {
+                color: #A3B83B;
+            }
+        }
+
+        .current {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 15%;
+            h5 {
+                color: #A3B83B;
+                font-size: 1.5rem;
+            }
+        }
+
+        .future {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 15%;
+        }
+
+        .right {
+            display: flex;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 10%;
+        }
+    }
+}

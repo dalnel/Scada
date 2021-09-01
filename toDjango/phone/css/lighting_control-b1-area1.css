@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  color: #99d9f2;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111559;
+}
+
+html {
+  width: 414px;
+  height: 896px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body div {
+  width: 100%;
+  display: flex;
+}
+body #header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10%;
+  margin-top: 25px;
+}
+body #header a {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15%;
+}
+body #header a button {
+  font-size: 2rem;
+}
+body #header a button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .a1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15%;
+}
+body #header .a1 button {
+  font-size: 2rem;
+}
+body #header .a1 button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .h1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
+  font-size: 1.8rem;
+}
+body #title {
+  height: 10%;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body #title img {
+  width: 70%;
+  margin-left: 20%;
+}
+body #title h1 {
+  font-size: 3rem;
+}
+body #floors {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+}
+body #floors a {
+  border: 4px solid #707070;
+  margin: 5% 0;
+  background: #03658c;
+}
+body #floors a:active {
+  box-shadow: 0 0 5px 5px red;
+}
+body #floors a button {
+  border: none;
+  background: inherit;
+  display: flex;
+  font-size: 2.5rem;
+  margin: auto;
+  font-weight: bold;
+  padding-bottom: 7px;
+  padding: 2.5%;
+}
+body #nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background: #f5f5f5;
+  width: 70%;
+  margin-left: 30%;
+  top: 0;
+  bottom: 0;
+  overflow-y: visible;
+  overflow-x: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-out;
+  right: -100%;
+}
+body #nav #header {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+body #nav #header p {
+  grid-column: 2;
+  color: #03658C;
+}
+body #nav #header button {
+  margin: 5% auto;
+  font-size: 2rem;
+}
+body #nav #options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+body #nav #options button {
+  border-radius: 50px;
+  color: #99d9f2;
+  background-color: #03658c;
+  border: 5px solid #707070;
+  width: 70%;
+  margin: 5% auto;
+  font-size: 2rem;
+  padding: 10%;
+  -webkit-animation: 1s linear 0s infinite alternate what;
+          animation: 1s linear 0s infinite alternate what;
+}
+body #nav #options button:active {
+  box-shadow: 0 0 5px 5px red;
+}
+body #nav.expand {
+  right: 0%;
+  opacity: 1;
+  background-color: #faa;
+}
+@-webkit-keyframes what {
+  100% {
+    box-shadow: 0px 10px 5px 5px #199b7d;
+  }
+}
+@keyframes what {
+  100% {
+    box-shadow: 0px 10px 5px 5px #199b7d;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body div {
+  width: 100%;
+  display: flex;
+}
+body #header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10%;
+  margin-top: 25px;
+}
+body #header a {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 20%;
+}
+body #header a button {
+  font-size: 2rem;
+}
+body #header a button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .a1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 20%;
+}
+body #header .a1 button {
+  font-size: 2rem;
+}
+body #header .a1 button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .h1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 20%;
+  font-size: 1.8rem;
+}
+
+#area {
+  display: flex;
+  flex-direction: column;
+}
+#area button {
+  border-radius: 50px;
+  color: #99d9f2;
+  background-color: #03658c;
+  border: 5px solid #707070;
+  margin: 20% auto;
+  font-size: 2.5rem;
+  width: 50%;
+  padding: 5%;
+}
+#area button:active {
+  box-shadow: 0 0 5px 5px red;
+}
+
+body {
+  flex-direction: column;
+  height: 100%;
+}
+body div {
+  width: 100%;
+}
+body #header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10%;
+  margin-top: 25px;
+}
+body #header a {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 17.5%;
+}
+body #header a button {
+  font-size: 2rem;
+}
+body #header a button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .a1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 17.5%;
+}
+body #header .a1 button {
+  font-size: 2rem;
+}
+body #header .a1 button img {
+  width: 40px;
+  height: 40px;
+}
+body #header .h1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 30%;
+  font-size: 1.8rem;
+}
+
+#swi_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18%;
+  margin-left: 30%;
+}
+#swi_flex #switch1 .div_codepen_body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+#swi_flex #switch1 .div_codepen_body *,
+#swi_flex #switch1 .div_codepen_body *:before,
+#swi_flex #switch1 .div_codepen_body *:after {
+  box-sizing: border-box;
+}
+#swi_flex #switch1 .div_codepen_body > div {
+  position: absolute;
+  top: -20%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+#swi_flex #switch1 label {
+  transform: scale(1.5);
+  display: block;
+  width: 160px;
+  background: #CCC;
+  height: 80px;
+  border-radius: 40px;
+  background: linear-gradient(to bottom, #9e9e9e 30%, #f4f4f4);
+  box-shadow: 0 2px 0 0 #fff, 0 -2px 0 0 #969494;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+#swi_flex #switch1 label input {
+  display: none;
+}
+#swi_flex #switch1 label .div1 {
+  display: block;
+  width: 120px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, #8b8c8e 20%, #f4f4f4);
+  border-radius: 25px;
+}
+#swi_flex #switch1 label .div1:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 46px;
+  width: 116px;
+  left: 2px;
+  top: 2px;
+  border-radius: 23px;
+  background: #828080;
+  box-shadow: inset 0 0 30px 0 rgba(0, 0, 0, 0.8);
+  transition: 0.2s;
+}
+#swi_flex #switch1 label i {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background: linear-gradient(to top, #9e9e9e 20%, #f4f4f4);
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+  top: 10px;
+  left: 15px;
+  transition: 0.25s;
+}
+#swi_flex #switch1 label i:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 52px;
+  height: 52px;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+  background: #8b8c8e;
+  z-index: 1;
+}
+#swi_flex #switch1 label input:checked ~ i {
+  top: 10px;
+  left: 86px;
+}
+#swi_flex #switch1 label input:checked + div:after {
+  background: white;
+  box-shadow: inset 0 0 30px 0 rgba(0, 0, 0, 0.6);
+}
+#swi_flex #switch1 label input:checked + div > .off {
+  color: transparent;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
+}
+#swi_flex #switch1 label input:checked + div > .on {
+  color: #6d6c6c;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+#swi_flex #switch1 label:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 164px;
+  height: 84px;
+  border-radius: 42px;
+  background: red;
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+  background: linear-gradient(to bottom, #969494, #fff);
+}
+#swi_flex #switch1 label:hover {
+  cursor: pointer;
+}
+#swi_flex #switch1 label:focus, #swi_flex #switch1 label:active {
+  outline: 0;
+}
+#swi_flex #switch1 .on,
+#swi_flex #switch1 .off {
+  text-transform: uppercase;
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  font-weight: 600;
+  z-index: 2;
+  display: block;
+  letter-spacing: 1px;
+  transition: 0.25s;
+}
+#swi_flex #switch1 .on {
+  color: transparent;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
+}
+#swi_flex #switch1 .off {
+  left: initial;
+  right: 17px;
+  color: #444;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#lights {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  height: 80%;
+}
+#lights [id^=light] {
+  height: 25%;
+}
+#lights [id^=light] #content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+#lights [id^=light] #content #options {
+  display: flex;
+  flex-direction: row;
+  background: #707070;
+  border-radius: 15px;
+  margin: auto;
+}
+#lights [id^=light] #content #options button {
+  font-size: 2rem;
+  padding: 5%;
+  flex: 1 1 100%;
+  border-right: 2px solid #111559;
+}

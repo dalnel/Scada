@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "phone/css/alarm_record.css" %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="javascript:history.back()"><button>＜<button></a>
+            <a href="{% url 'phoneHome' %}"><button><img src="{% static "phone/images/NCUT.svg" %}"></button></a>
+            <h1 class="h1">警報紀錄</h1>
+        <a class="a1"></a>
+        <a class="a1"><button id="expand_menu_btn"><img src="{% static "phone/images/menu.ico" %}"></button></a>
+    </div>
+    <div id="details">
+        <div>
+            <p>位置</p>
+            <p>B1-區域1-開關2</p>
+            <p>求救方式</p>
+            <p>刷卡求救</p>
+            <p>發生時間</p>
+            <p>2100-00-00 00:00:00</p>
+        </div>
+        <a href="{% url 'PalarmRecordHistory' %}">
+            <button>歷史紀錄</button>
+        </a>
+    </div>
+</body>
+
+</html>

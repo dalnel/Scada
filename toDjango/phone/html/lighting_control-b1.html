@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "phone/css/lighting_control-b1.css" %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="javascript:history.back()"><button>＜<button></a>
+        <a href="{% url 'phoneHome' %}"><button><img src="{% static "phone/images/NCUT.svg" %}"></button></a>
+        <h1 class="h1">B1</h1>
+        <a class="a1"></a>
+        <a class="a1"></a>
+    </div>
+    <div id="area">
+        <a href="{% url 'PlightCtrlB1Area1' %}"><button>區域1</button></a>
+        <a href="{% url 'PlightCtrlB1Area2' %}"><button>區域2</button></a>
+    </div>
+</body>
+
+</html>

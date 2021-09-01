@@ -2,11 +2,12 @@
 <html>
 
 <head>
+    {% load static %}
     <meta charset=utf-8>
     <title> 勤益冷凍師徒制_定址式開關 </title>
     <meta name="定址式開關,switch" content="開關,監控開關,定址式開關,勤益冷凍,勤益師徒制,Addressing type Switch">
-    <link href="../css/測試板型.css" rel="stylesheet">
-    <script src="../js/PageSwitch.js" ></script>
+    <link href="{%static "css/測試板型.css" %}" rel="stylesheet">
+    <script src="{%static "/js/PageSwitch.js" %}" ></script>
 </head>
 
 
@@ -15,7 +16,7 @@
 
     <div id="header">
         <a href="./測試版型.html">
-            <img src="../graph/NCUT.svg" alt="回首頁" title="返回控制介面" width="55px" height="55px" style="float: left;">
+            <img src="{% static "img/NCUT.svg" %}" alt="回首頁" title="返回控制介面" width="55px" height="55px" style="float: left;">
         </a>
         <span class="h1"><b>定址式燈控緊急開關系統</b></span>
     </div>

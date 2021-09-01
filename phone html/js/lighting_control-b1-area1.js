@@ -14,7 +14,7 @@ lights.forEach(
         options[0].addEventListener("click", () =>
         {
             options[1].style.backgroundColor = backgroundColor;
-            options[0].style.backgroundColor = "#0F0";
+            options[0].style.backgroundColor = "#0A0";
         }
         );
 
@@ -22,7 +22,7 @@ lights.forEach(
         options[1].addEventListener("click", () =>
         {
             options[0].style.backgroundColor = backgroundColor;
-            options[1].style.backgroundColor = "#F00";
+            options[1].style.backgroundColor = "#A00";
         }
         );
     }
